@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-01</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- HEADING -->
+     <div id="main">
+    <h1 id="heading">RESPONSIVE MULTIMEDIA FORM PAGE</h1>
+    <!-- form -->
+        <form id="userform" action="" method="" autocomplete="on">
+            <div id="form">
+                <h3>CREATE ACCOUNT</h3>
+                <input type="text" id="name" name="user name" required pattern="[A-Za-z ]{5,20}" placeholder="Enter your Name" title="Name contains only Letters and min.lenght 5-char">
+                <input type="email" id="email" name="email" pattern="[A-Za-z0-9#$&_]+@gmail.com" required placeholder="Enter your Email" title="Enter a valid Email">
+                <div id="gender">
+                    <label for="gender">Gender :</label>
+                    <input type="radio" id="gender" name="gender" value="Male" required>Male
+                    <input type="radio" id="gender" name="gender" value="Female" required>Female 
+                </div>
+                <div id="skills">
+                    <label for="skills">Skills :</label> <br>
+                    <input type="checkbox" id="skills" name="skills" required>Frontend 
+                    <input type="checkbox" id="skills" name="skills">Backend
+                    <input type="checkbox" id="skills" name="skills">Python
+                </div>
+                <label for="queries">Any Queries ?</label>
+                <textarea name="queries" id="queries" rows="5" cols="50"></textarea>
+                <div id="btn">
+                    <button type="submit">SUBMIT</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+        <!-- MULTIMEDIA -->
+        <div id="multimedia">
+            <div id="audioTag">
+                <audio controls>
+                    <source src="assets/coolieSong.mp3">
+                </audio>
+            </div>
+            <div id="videoTag">
+                <video controls autoplay muted loop width="80%">
+                    <source src="assets/travelVideo.mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- POSITIONS -->
+        <div id="positions">
+            <div id="images">
+                <img src="assets/khaidi.png" alt="" id="img1">
+                <img src="assets/vikram.png" alt="" id="img2">
+                <img src="assets/leo.png" alt="" id="img3">
+            </div>
+        </div>
+
+        <!-- IFRAMES -->
+        <div id="iframes">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17628840.35735154!2d72.70101442771478!3d19.88156216412751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e1!3m2!1sen!2sin!4v1755600778904!5m2!1sen!2sin" allowfullscreen></iframe>
+        </div>
+
+    <script src="scripts/app.js"></script>
+
+  </body>
+</html>
